@@ -1,0 +1,261 @@
+:root {
+  --primary-color: #121212;
+  --secondary-color: #F5C518;
+}
+
+/* NAVBAR */
+
+#movie-star-title {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+#navbar {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 968px) {
+  #seach-form {
+    width: 60%;
+  }
+}
+
+
+#navbarSupportedContent {
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: #FFF;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  color: #999;
+}
+
+/* FOOTER */
+
+#footer {
+  background-color: var(--primary-color);
+  color: #FFF;
+  text-align: center;
+  padding: 50px 10px;
+}
+
+#footer a {
+  color: #FFF;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+#footer i {
+  transition: 0.5s;
+  font-size: 1.5em;
+}
+
+#footer i:hover,
+#footer a:hover {
+  color: #aaa;
+}
+
+#footer li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/* MAIN CONTAINER */
+
+#main-container {
+  background-color: #000;
+  color: #FFF;
+  min-height: 65vh;
+}
+
+/* FLASH_MESSAGE */
+
+#flash-message-container {
+  background-color: #000;
+}
+
+.flash-message{
+  max-width: 600px;
+  margin: 0 auto
+}
+
+/* AUTH-PAGE */
+
+.auth-form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.auth-form-container h2 {
+  text-align: center;
+  border-bottom: 4px solid var(--secondary-color);
+  width: 200px;
+  margin: 0 auto 30px;
+  padding: 10px;
+}
+
+/* HOME */
+
+.section-title {
+  font-size: 24px;
+  border-left: 4px solid var(--secondary-color);
+  padding-left: 12px;
+  margin-top: 20px;
+}
+
+.section-description {
+  color: #CCC;
+  font-size: 18px;
+}
+
+.movie-card {
+  background-color: #1A1A1A;
+  margin-bottom: 30px;
+}
+
+.movie-card .card-img-top {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.movie-card .card-title {
+  height: 3rem;
+}
+
+.card-title a {
+  font-size: 16px;
+  color: #FFF;
+}
+
+.movie-card i.bi-star-fill {
+  color: var(--secondary-color);
+}
+
+.movie-card .rating {
+  color: #CCC;
+}
+
+.rate-btn {
+  margin-bottom: 15px;
+  color: #5799EF;
+  background-color: #333;
+  border-color: #333;
+  width: 100%;
+  font-weight: bold;
+}
+
+.rate-btn:hover {
+  background-color: #444;
+  border-color: #444;
+}
+
+.movie-card .btns-container {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.movie-card .btns-container * {
+  flex: 1;
+}
+
+.edit-btn {
+  background-color: #0DCAF0;
+  color: #FFF;
+  border: 1px solid #0DCAF0;
+}
+
+.edit-btn:hover {
+  background-color: transparent;
+  color: #0DCAF0;
+  text-decoration: none;
+  border: 1px solid #0DCAF0;
+}
+
+.delete-btn {
+  background-color: #DC3545;
+  color: #FFF;
+  border: 1px solid #DC3545;
+}
+
+.delete-btn:hover {
+  background-color: transparent;
+  color: #DC3545;
+  text-decoration: none;
+  border: 1px solid #DC3545;
+}
+
+.empty-list {
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+  font-weight: bold;
+}
+
+/* GLOBAL */
+
+.card-btn {
+  color: #000;
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  width: 100%;
+}
+
+.card-btn:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+#add-movie-container .card-btn {
+  width: auto;
+}
+
+/* EDIT PROFILE */
+
+#profile-image-container {
+  width: 150px;
+  height: 150px;
+  border: 6px solid var(--secondary-color);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 15px auto;
+}
+
+.form-control.disabled {
+  background-color: #CCC;
+}
+
+/* NEW MOVIE */
+
+#new-movie-container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.movie-image-container {
+  height: 400px;
+  min-width: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-title::after {
+  content: "";
+  width: 300px;
+  border-bottom: 2px solid var(--secondary-color);
+  display: block;
+  margin: 0 auto;
+  padding-top: 7px;
+}
+
